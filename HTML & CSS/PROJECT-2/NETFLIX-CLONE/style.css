@@ -40,7 +40,7 @@ nav {
 nav img {
   position: relative;
   z-index: 10;
-  width: 80px;
+  width: 100px;
 }
 nav button {
   position: relative;
@@ -154,4 +154,57 @@ section.first > div :nth-child(1) {
 section.first > div :nth-child(2) {
   font-size: 18px;
   font-weight: 200;
+}
+.faq {
+  background-color: black;
+  color: white;
+  /* border: 3px solid yellow; */
+  padding: 24px;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.faqbox {
+  font-size: 20px;
+  /* border: 3px solid rgb(9, 245, 56); */
+  padding: 20px ;
+  background-color: #2d2d2d;
+  max-width: 60vw;
+  display: flex;
+  margin: 34px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faqbox svg {
+  filter: invert(1);
+}
+.faqbox:hover {
+  transition: all 1s ease-out;
+  background-color: rgb(150, 144, 144);
+}
+footer {
+  color: white;
+  max-width: 60vw;
+  height: 60vh;
+  margin: auto;
+  padding: 10px;
+}
+footer .question {
+  padding: 30px 0px;
+}
+footer a {
+  color: white;
+  font-size: 15px;
+}
+.footer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
