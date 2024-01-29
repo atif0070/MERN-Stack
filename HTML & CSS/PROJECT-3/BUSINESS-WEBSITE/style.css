@@ -156,7 +156,110 @@ input::placeholder {
   background-color: #dcdcdc;
   text-align: center;
 }
+/* Process Section */
+.process .row {
+  justify-content: center;
+}
+.process-content {
+  margin-top: 100px;
+}
+.progress-bar {
+  width: 80%;
+  height: 2px;
+  background-color: #222;
+  margin: auto;
+  position: relative;
+}
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+  background-color: #222;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+}
+.progress-bar .c1 {
+  top: -8px;
+  left: 50px;
+}
+.progress-bar .c2 {
+  top: -8px;
+  left: 50%;
+}
+.progress-bar .c3 {
+  top: -8px;
+  right: 50px;
+}
+.box1,
+.box2,
+.box3 {
+  padding: 1.8rem;
+}
+.process .box2 {
+  text-align: center;
+}
+.process .box3 {
+  text-align: right;
+}
+.process-content h2 {
+  color: #4caf50;
+}
+/* Testimony Section */
+.testimony {
+  background-color: #222;
+  color: whitesmoke;
+}
+.testimony .test {
+  background-color: #505050;
+  padding: 4rem 8rem;
+  margin: 0 1rem;
+}
+.testimony .image {
+  height: 80px;
+  width: 80px;
+}
+.testimony img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Contact Section */
+.contact .row {
+  justify-content: center;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact form input {
+  width: 50%;
+}
+.contact textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  color: #ccc;
+  resize: none;
+  margin: 1.2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  background-color: #222;
+  height: 80px;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 80px;
+}
 @media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
   nav {
     flex-direction: column;
     position: relative;
@@ -180,5 +283,36 @@ input::placeholder {
   }
   nav ul li a {
     color: #222;
+  }
+  /* Header Content */
+  .header-content {
+    width: 100%;
+    top: 16%;
+    left: 0;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 80%;
+    margin: 1.2rem auto;
+  }
+  .progress-bar {
+    display: none;
+  }
+  .process-content {
+    margin-top: 20px;
+  }
+  .process .box1,
+  .process .box2,
+  .process .box3 {
+    text-align: center;
+  }
+  .testimony .test {
+    margin: 1.2rem 0;
+  }
+  .contact form input,
+  .contact textarea {
+    width: 100%;
   }
 }
